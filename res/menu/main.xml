@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/itemChooseWhite" 
+	    android:title="@string/itemChooseWhite"/>  
+    <item android:id="@+id/itemChooseYellow" 
+        android:title="@string/itemChooseYellow"/>
+    <item android:id="@+id/itemChoosePicture"
+        android:title="@string/itemChoosePicture"/>
+    <item android:id="@+id/itemMainMenu"
+        android:title="@string/itemMainMenu"/>
+</menu>

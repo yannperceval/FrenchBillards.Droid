@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Billard</string>
+	<string name="infoAppli">TER M1 Informatique 2015</string>    
+    
+	<string name="descr_logo">Assistant pour Billard français</string>
+    <string name="descr_rtn">Retour</string>    
+    <string name="descr_inverse">Inverser</string> 
+    <string name="descr_animStart">Lancer ou mettre en pause l\'animation</string>  
+    <string name="descr_animStop">Arrêter l\'animation</string> 
+    <string name="descr_fond">Billard français</string>
+    <string name="descr_meilleur_coup">Aide-moi à gagner</string>
+    <string name="descr_entrainement">Entraînement</string>
+    <string name="descr_multijoueur">Partie multijoueur</string>
+    <string name="descr_retour">Retour</string>
+    <string name="descr_quitter">Quitter</string>
+    
+    <string name="itemChooseWhite">Boule blanche</string>
+    <string name="itemChooseYellow">Boule jaune</string>
+    <string name="itemChoosePicture">Sélectionner une image</string>
+    <string name="itemMainMenu">Retour à l\'accueil</string>
+</resources>

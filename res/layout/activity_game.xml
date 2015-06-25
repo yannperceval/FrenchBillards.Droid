@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Barre du haut -->
+    <RelativeLayout
+        android:id="@+id/surfaceTop"
+        android:layout_alignParentTop = "true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:maxHeight="20dp"
+	    android:background="#1A1B1C">
+	    <ImageView 
+	        android:id="@+id/imagejoueur1"
+  	  		android:layout_alignParentLeft = "true"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds= "true"
+	        android:scaleType="fitXY"
+	        android:maxHeight="15dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	    	android:layout_marginBottom="5dp"
+	    	android:layout_marginTop="5dp"
+	    	android:src="@drawable/bille_blanche" />
+	    <TextView
+	        android:id="@+id/textejoueur1"
+	        android:layout_toRightOf = "@id/imagejoueur1"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF" />
+	    <ImageView 
+	        android:id="@+id/imagejoueur2"
+  	  		android:layout_alignParentRight = "true"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:adjustViewBounds= "true"
+	        android:scaleType="fitXY"
+	        android:maxHeight="15dp"
+	        android:layout_marginRight="10dp"
+	    	android:layout_marginBottom="5dp"
+	    	android:layout_marginTop="5dp"
+	    	android:src="@drawable/bille_jaune" />
+	    <TextView
+	        android:id="@+id/textejoueur2"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf = "@id/imagejoueur2"
+	        android:layout_marginRight="10dp"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF" />
+    </RelativeLayout>
+    
+    <!-- Barre du bas -->
+    <RelativeLayout
+        android:id="@+id/surfaceBottom"
+        android:layout_alignParentBottom = "true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:maxHeight="20dp"
+		android:background="#1A1B1C">
+		
+        <TextView
+	        android:id="@+id/texteAngle"
+		    android:layout_alignParentLeft = "true"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:gravity="center_vertical"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF"
+			android:text="Angle : " />        
+        <Button
+	        android:id="@+id/moinsAngle"
+	        android:layout_toRightOf = "@id/texteAngle"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:text="-" />
+        <TextView
+	        android:id="@+id/angle"
+	        android:layout_toRightOf = "@id/moinsAngle"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF"
+			android:text="0°" />
+        <Button
+	        android:id="@+id/plusAngle"
+	        android:layout_toRightOf = "@id/angle"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:text="+" />
+        
+        
+        <TextView
+	        android:id="@+id/textePuissance"
+	        android:layout_toRightOf = "@id/plusAngle"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF"
+			android:text="Puissance : " />        
+        <Button
+	        android:id="@+id/moinsPuissance"
+	        android:layout_toRightOf = "@id/textePuissance"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:text="-" />
+        <TextView
+	        android:id="@+id/puissance"
+	        android:layout_toRightOf = "@id/moinsPuissance"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:textColor="#FFFFFF"
+			android:text="50" />
+        <Button
+	        android:id="@+id/plusPuissance"
+	        android:layout_toRightOf = "@id/puissance"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	    	android:textSize="18sp"
+			android:text="+" />
+        <!--  <NumberPicker 
+            android:id="@+id/test"
+	        android:layout_toRightOf = "@id/plusPuissance"
+    		android:orientation="vertical"
+	   	    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:adjustViewBounds= "true"
+	        android:scaleType="fitXY"
+	        android:maxHeight="15dp"/> -->
+        
+		<Button
+		    android:id="@+id/jouer"
+		    android:layout_alignParentRight = "true"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:textSize="18sp"
+			android:text="Jouer"/>
+    </RelativeLayout>
+    
+    <!-- Plateforme de jeu -->
+    <com.example.testopencv.SolutionCanvasView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above = "@id/surfaceBottom"
+        android:layout_below = "@id/surfaceTop"
+        android:background="#000000" />
+    
+</RelativeLayout>

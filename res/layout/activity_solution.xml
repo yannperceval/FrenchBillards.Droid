@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<com.example.testopencv.SolutionCanvasView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000" />
+    
+	<ImageButton
+   	    android:id="@+id/imageButtonRetour"
+   	    android:src="@drawable/rtn"
+    	android:layout_width="wrap_content"
+  	  	android:layout_height="wrap_content"
+   	    android:contentDescription="@string/descr_rtn"
+  	  	android:layout_marginRight="5dp"
+  	  	android:layout_alignParentBottom = "true" />
+	<!-- android:background="@android:color/transparent" -->
+	
+	<ImageButton
+   	    android:id="@+id/imageButtonInverse"
+   	    android:src="@drawable/inverse2"
+    	android:layout_width="wrap_content"
+  	  	android:layout_height="wrap_content"
+   	    android:contentDescription="@string/descr_inverse"
+  	  	android:layout_marginRight="5dp"
+  	  	android:layout_alignParentBottom = "true"
+  	  	android:layout_toRightOf = "@id/imageButtonRetour" 
+  	  	android:visibility="gone" />
+	
+	<ImageButton
+   	    android:id="@+id/imageButtonStartAnimation"
+   	    android:src="@drawable/anim_start"
+    	android:layout_width="wrap_content"
+  	  	android:layout_height="wrap_content"
+   	    android:contentDescription="@string/descr_animStart"
+  	  	android:layout_marginRight="5dp"
+  	  	android:layout_alignParentBottom = "true"
+  	  	android:layout_toRightOf = "@id/imageButtonInverse" 
+  	  	android:visibility="gone" />
+	
+	<ImageButton
+   	    android:id="@+id/imageButtonStopAnimation"
+   	    android:src="@drawable/anim_stop"
+    	android:layout_width="wrap_content"
+  	  	android:layout_height="wrap_content"
+   	    android:contentDescription="@string/descr_animStop"
+  	  	android:layout_marginRight="5dp"
+  	  	android:layout_alignParentBottom = "true"
+  	  	android:layout_toRightOf = "@id/imageButtonStartAnimation" 
+  	  	android:visibility="gone" />
+	
+	
+   		
+</RelativeLayout>
