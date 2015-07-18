@@ -1,5 +1,5 @@
 # FrenchBillards.Droid
-| Licence GPL v2
+> Licence GPL v2
 
 This is a student projet. (2015)
 
